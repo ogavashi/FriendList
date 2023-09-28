@@ -11,6 +11,7 @@
 		8B22695A2AC4C057008390F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2269592AC4C057008390F0 /* ContentView.swift */; };
 		8B22695C2AC4C058008390F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B22695B2AC4C058008390F0 /* Assets.xcassets */; };
 		8B22695F2AC4C058008390F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B22695E2AC4C058008390F0 /* Preview Assets.xcassets */; };
+		8BA755102AC5DA2B001DF90E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7550F2AC5DA2B001DF90E /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8B2269592AC4C057008390F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B22695B2AC4C058008390F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B22695E2AC4C058008390F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BA7550F2AC5DA2B001DF90E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		8B2269562AC4C057008390F0 /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				8BA7550E2AC5C1A7001DF90E /* Data */,
 				8B2269572AC4C057008390F0 /* FriendListApp.swift */,
 				8B2269592AC4C057008390F0 /* ContentView.swift */,
 				8B22695B2AC4C058008390F0 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				8B22695E2AC4C058008390F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BA7550E2AC5C1A7001DF90E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8BA7550F2AC5DA2B001DF90E /* Friend.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA755102AC5DA2B001DF90E /* Friend.swift in Sources */,
 				8B22695A2AC4C057008390F0 /* ContentView.swift in Sources */,
 				8B2269582AC4C057008390F0 /* FriendListApp.swift in Sources */,
 			);
