@@ -16,6 +16,11 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            apiService().getUsers { users in
+                print(users)
+            }
+        }
     }
 }
 

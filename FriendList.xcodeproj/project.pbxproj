@@ -12,6 +12,8 @@
 		8B22695C2AC4C058008390F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B22695B2AC4C058008390F0 /* Assets.xcassets */; };
 		8B22695F2AC4C058008390F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B22695E2AC4C058008390F0 /* Preview Assets.xcassets */; };
 		8BA755102AC5DA2B001DF90E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7550F2AC5DA2B001DF90E /* Friend.swift */; };
+		8BDBD8CF2AC86D1F004427B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8CE2AC86D1F004427B0 /* User.swift */; };
+		8BDBD8D22AC86EA5004427B0 /* apiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8D12AC86EA5004427B0 /* apiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		8B22695B2AC4C058008390F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B22695E2AC4C058008390F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BA7550F2AC5DA2B001DF90E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		8BDBD8CE2AC86D1F004427B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BDBD8D12AC86EA5004427B0 /* apiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		8B2269562AC4C057008390F0 /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBD8D02AC86E72004427B0 /* Api */,
 				8BA7550E2AC5C1A7001DF90E /* Data */,
 				8B2269572AC4C057008390F0 /* FriendListApp.swift */,
 				8B2269592AC4C057008390F0 /* ContentView.swift */,
@@ -74,8 +79,17 @@
 			isa = PBXGroup;
 			children = (
 				8BA7550F2AC5DA2B001DF90E /* Friend.swift */,
+				8BDBD8CE2AC86D1F004427B0 /* User.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		8BDBD8D02AC86E72004427B0 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBD8D12AC86EA5004427B0 /* apiService.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDBD8CF2AC86D1F004427B0 /* User.swift in Sources */,
+				8BDBD8D22AC86EA5004427B0 /* apiService.swift in Sources */,
 				8BA755102AC5DA2B001DF90E /* Friend.swift in Sources */,
 				8B22695A2AC4C057008390F0 /* ContentView.swift in Sources */,
 				8B2269582AC4C057008390F0 /* FriendListApp.swift in Sources */,
