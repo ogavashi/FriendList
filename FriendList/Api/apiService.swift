@@ -14,11 +14,10 @@ class apiService {
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
-            let comments = try! decoder.decode([User].self, from: data!)
-            print(comments)
+            let users = try! decoder.decode([User].self, from: data!)
             
             DispatchQueue.main.async {
-                completion(comments)
+                completion(users)
             }
         }
         .resume()

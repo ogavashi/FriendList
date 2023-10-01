@@ -14,6 +14,11 @@
 		8BA755102AC5DA2B001DF90E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7550F2AC5DA2B001DF90E /* Friend.swift */; };
 		8BDBD8CF2AC86D1F004427B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8CE2AC86D1F004427B0 /* User.swift */; };
 		8BDBD8D22AC86EA5004427B0 /* apiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8D12AC86EA5004427B0 /* apiService.swift */; };
+		8BDBD8D52AC871F8004427B0 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8D42AC871F8004427B0 /* FriendsListView.swift */; };
+		8BDBD8D72AC9C182004427B0 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8D62AC9C182004427B0 /* AppState.swift */; };
+		8BDBD8D92AC9C6F3004427B0 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8D82AC9C6F3004427B0 /* FriendView.swift */; };
+		8BDBD8DC2AC9CB40004427B0 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8DB2AC9CB40004427B0 /* ProfileRow.swift */; };
+		8BDBD8DE2AC9D169004427B0 /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBD8DD2AC9D169004427B0 /* FriendRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		8BA7550F2AC5DA2B001DF90E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		8BDBD8CE2AC86D1F004427B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8BDBD8D12AC86EA5004427B0 /* apiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiService.swift; sourceTree = "<group>"; };
+		8BDBD8D42AC871F8004427B0 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
+		8BDBD8D62AC9C182004427B0 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8BDBD8D82AC9C6F3004427B0 /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
+		8BDBD8DB2AC9CB40004427B0 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
+		8BDBD8DD2AC9D169004427B0 /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,8 @@
 		8B2269562AC4C057008390F0 /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBD8DA2AC9CB2D004427B0 /* Components */,
+				8BDBD8D32AC871E8004427B0 /* View */,
 				8BDBD8D02AC86E72004427B0 /* Api */,
 				8BA7550E2AC5C1A7001DF90E /* Data */,
 				8B2269572AC4C057008390F0 /* FriendListApp.swift */,
@@ -80,6 +92,7 @@
 			children = (
 				8BA7550F2AC5DA2B001DF90E /* Friend.swift */,
 				8BDBD8CE2AC86D1F004427B0 /* User.swift */,
+				8BDBD8D62AC9C182004427B0 /* AppState.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -90,6 +103,24 @@
 				8BDBD8D12AC86EA5004427B0 /* apiService.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		8BDBD8D32AC871E8004427B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBD8D42AC871F8004427B0 /* FriendsListView.swift */,
+				8BDBD8D82AC9C6F3004427B0 /* FriendView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BDBD8DA2AC9CB2D004427B0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBD8DB2AC9CB40004427B0 /* ProfileRow.swift */,
+				8BDBD8DD2AC9D169004427B0 /* FriendRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +195,14 @@
 			files = (
 				8BDBD8CF2AC86D1F004427B0 /* User.swift in Sources */,
 				8BDBD8D22AC86EA5004427B0 /* apiService.swift in Sources */,
+				8BDBD8DE2AC9D169004427B0 /* FriendRow.swift in Sources */,
+				8BDBD8DC2AC9CB40004427B0 /* ProfileRow.swift in Sources */,
 				8BA755102AC5DA2B001DF90E /* Friend.swift in Sources */,
 				8B22695A2AC4C057008390F0 /* ContentView.swift in Sources */,
 				8B2269582AC4C057008390F0 /* FriendListApp.swift in Sources */,
+				8BDBD8D72AC9C182004427B0 /* AppState.swift in Sources */,
+				8BDBD8D92AC9C6F3004427B0 /* FriendView.swift in Sources */,
+				8BDBD8D52AC871F8004427B0 /* FriendsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

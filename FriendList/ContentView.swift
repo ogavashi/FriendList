@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var state = AppState()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            FriendsListView()
+                .navigationTitle("FriendList")
         }
-        .padding()
+        .environmentObject(state)
         .onAppear {
             apiService().getUsers { users in
-                print(users)
+                state.users = users
             }
         }
     }
