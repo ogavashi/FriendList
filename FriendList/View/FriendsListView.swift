@@ -8,21 +8,16 @@
 import SwiftUI
 
 struct FriendsListView: View {
-    @EnvironmentObject var state: AppState
+    @Environment(\.managedObjectContext) var moc
+    
+    @FetchRequest(sortDescriptors: []) var users: FetchedResults<CachedUser>
+    
     var body: some View {
         List {
-            ForEach(state.users) { user in
+            ForEach(users) { user in
              FriendRow(user: user)
             }
         }
     }
 }
 
-struct FriendsListView_Previews: PreviewProvider {
-    static let state = AppState()
-    
-    static var previews: some View {
-        FriendsListView()
-            .environmentObject(state)
-    }
-}
